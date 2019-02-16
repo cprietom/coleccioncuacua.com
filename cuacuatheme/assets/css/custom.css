@@ -1,0 +1,8 @@
+/*
+ * Custom code goes here.
+ * A template should always ship with an empty custom.css
+ */
+ #header{ background: white !important; }
+
+#header .header-nav { margin-bottom: 5px; }
+#header .header-top { padding-bottom: 5px; }
