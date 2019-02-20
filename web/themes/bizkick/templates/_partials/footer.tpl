@@ -45,7 +45,7 @@
                 <div class="col-md-6">
                     <p class="text-sm-center">
                         {block name='copyright_link'}
-                            <a class="_blank" href="http://www.prestashop.com" target="_blank">
+                            <a class="_blank" href="http://www.coleccioncuacua.com">
                                 {l s='%copyright% %year% - Colección Cuacuá' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
                             </a>
                         {/block}
