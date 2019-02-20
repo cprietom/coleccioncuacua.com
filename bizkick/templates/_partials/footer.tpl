@@ -46,29 +46,10 @@
                     <p class="text-sm-center">
                         {block name='copyright_link'}
                             <a class="_blank" href="http://www.prestashop.com" target="_blank">
-                                {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+                                {l s='%copyright% %year% - Colección Cuacuá' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
                             </a>
                         {/block}
                     </p>
-                </div>
-                <div class="cards col-md-6">
-                    <ul>
-                        <li>
-                            <img src="{$urls.img_url}/americanexpress.png">
-                        </li>
-                        <li>
-                            <img src="{$urls.img_url}/discover.png">
-                        </li>
-                        <li>
-                            <img src="{$urls.img_url}/maestro.png">
-                        </li>
-                        <li>
-                            <img src="{$urls.img_url}/master.png">
-                        </li>
-                        <li>
-                            <img src="{$urls.img_url}/visa.png">
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
