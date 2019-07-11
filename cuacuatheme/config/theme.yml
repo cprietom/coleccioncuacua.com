@@ -1,6 +1,6 @@
-parent: classic
+parent: bizkick
 name: cuacuatheme
-display_name: Cuacua theme of classic's theme
+display_name: Cuacua theme of bizkick's theme
 version: 1.0.0
 assets:
-  use_parent_assets: false
+  use_parent_assets: true
