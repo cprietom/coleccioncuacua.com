@@ -2,4 +2,9 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
- #header{ background: blue !important; }
+#header{ background: blue !important; }
+ 
+#_desktop_language_selector,
+#_desktop_currency_selector {
+    float: right;
+}
