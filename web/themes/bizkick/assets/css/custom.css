@@ -21,7 +21,9 @@ Header
 }
 #_desktop_language_selector,
 #_desktop_currency_selector {
-    float: left;
+    float: right;
+    margin-left: 10px;
+    padding-top: 15px;
 }
 #header .header-nav .currency-selector, 
 #header .header-nav .language-selector {
