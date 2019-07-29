@@ -51,6 +51,22 @@
                         {/block}
                     </p>
                 </div>
+                <div class="cards col-md-6">
+                    <ul>
+                        <li>
+                            <img src="{$urls.img_url}/americanexpress.png">
+                        </li>
+                        <li>
+                            <img src="{$urls.img_url}/discover.png">
+                        </li>
+                        <li>
+                            <img src="{$urls.img_url}/master.png">
+                        </li>
+                        <li>
+                            <img src="{$urls.img_url}/visa.png">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
