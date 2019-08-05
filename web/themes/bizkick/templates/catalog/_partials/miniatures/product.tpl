@@ -95,7 +95,7 @@
                             <input type="hidden" name="token" class="cart-form-token" value="{$static_token}">
                             <input type="hidden" value="{$product.id_product}" name="id_product">
                             <input type="hidden" class="input-group form-control" value="1" name="qty" />
-              				{if $product.quantity == '0'}
+              				{if $product.quantity <= '0'}
                                 <button data-button-action="add-to-cart" class="btn btn-primary" title="{$product.availability_message}">{l s='Add to cart' d='Shop.Theme.Actions'}</button>
                                 <span id="product-availability">
                                   <i class="material-icons product-unavailable">&#xE14B;</i>{$product.availability_message}
