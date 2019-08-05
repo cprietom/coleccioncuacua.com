@@ -54,6 +54,9 @@
                 <div class="cards col-md-6">
                     <ul>
                         <li>
+                            <img src="{$urls.img_url}/paypal.png">
+                        </li>
+                        <li>
                             <img src="{$urls.img_url}/americanexpress.png">
                         </li>
                         <li>
