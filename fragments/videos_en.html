@@ -1,0 +1,107 @@
+<section class="featured-products clearfix">
+	<div class="container">
+		<div class="product-section-title">
+			<h1 id="_title">Últimos vídeos</h1>
+		</div>
+		<div class="products-grid">
+			<div class="row">
+				<div class="products owl-theme owl-carousel product-slider">
+					<div class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<div style="position: relative; padding-top: 56.25%;">
+										<iframe
+											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+											src="https://www.youtube.com/embed/ZndHigMZVjg"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen="allowfullscreen"></iframe>
+									</div>
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="_link0" href="#">El tigre Cuacuá (español)</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<div style="position: relative; padding-top: 56.25%;">
+										<iframe
+											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+											src="https://www.youtube.com/embed/sHh_4X2PoTA"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen="allowfullscreen"></iframe>
+									</div>
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="_link1" href="#">El tigre Cuacuá (inglés)</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<div style="position: relative; padding-top: 56.25%;">
+										<iframe
+											style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
+											src="https://www.youtube.com/embed/IO8AxJz2EmY"
+											frameborder="0"
+											allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+											allowfullscreen="allowfullscreen"></iframe>
+									</div>
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="_link2" href="#">Roar Squirrel (inglés)</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+				  </div>
+			</div>
+			<a id="_link_all" class="all-product-link float-xs-left float-md-right h4" href="#">Ver todos los videos</a>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+var language = "en";
+var title_text = "Latest videos";
+var link_all_text = "All videos";
+var links_text = ["El tigre Cuacuá (Spanish)", "Cuacua Tiger (English)", "Roar Squirrel (English)"];
+
+/* * */
+
+var url_base = "http://coleccioncuacua.com.mialias.net";
+
+document.getElementById("_title").innerHTML = title_text;
+
+var link_all_url = url_base + "/" + language + "/content/8-videos";
+
+var links_anchor = ["#cuacua-es", "#cuacua-en", "#roar-en"];
+links_text.forEach(initLink);
+function initLink(value, index, array) {
+	var link = document.getElementById("_link" + index);
+	link.href = link_all_url + links_anchor[index];
+	link.innerHTML = value;
+}
+
+var link_all = document.getElementById("_link_all");
+link_all.href = link_all_url;
+link_all.innerHTML = link_all_text;
+</script>

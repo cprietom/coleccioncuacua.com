@@ -1,0 +1,130 @@
+<section class="featured-products clearfix">
+	<div class="container">
+		<div class="product-section-title">
+			<h1 id="downloads_title">Descargas</h1>
+		</div>
+		<div class="products-grid">
+			<div class="row">
+				<div id="_downloads" class="products owl-theme owl-carousel product-slider">
+					<div id="download-0" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img0" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link0" href="#">Descarga 0</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div id="download-1" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img1" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link1" href="#">Descarga 1</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div id="download-2" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img2" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link2" href="#">Descarga 2</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div id="download-3" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img3" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link3" href="#">Descarga 3</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div id="download-4" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img4" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link4" href="#">Descarga 4</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div id="download-5" class="product-item">
+						<article
+							itemscope="" itemtype="http://schema.org/Product">
+							<div class="thumbnail-container">
+								<div class="product-image-block">
+									<img id="downloads_img5" src="nothing.png" />
+								</div>
+								<div>
+									<h1 class="h3 product-title" itemprop="name">
+										<a id="downloads_link5" href="#">Descarga 5</a>
+									</h1>
+								</div>
+							</div>
+						</article>
+					</div>
+				  </div>
+			</div>
+			<a id="downloads_link_all" class="all-product-link float-xs-left float-md-right h4" href="#">Ver todas las descargas</a>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+var downloads_title_text = "Descargas";
+var downloads_link_all_text = "Ver todas las descargas";
+var downloads_links_text = ["Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6"];
+
+/* * */
+
+var downloads_folder = "/themes/bizkick/assets/img/downloads";
+
+document.getElementById("downloads_title").innerHTML = downloads_title_text;
+
+var downloads_link_all_url = url_base + "/" + language + "/content/9-downloads";
+downloads_links_text.forEach(downloads_initLink);
+function downloads_initLink(value, index, array) {
+	var link = document.getElementById("downloads_link" + index);
+	link.href = downloads_link_all_url + "#download-" + index;
+	link.innerHTML = value;
+	var img = document.getElementById("downloads_img" + index);
+	img.src= url_base + downloads_folder + "/download" + index + ".png";
+}
+
+var downloads_link_all = document.getElementById("downloads_link_all");
+downloads_link_all.href = downloads_link_all_url;
+downloads_link_all.innerHTML = downloads_link_all_text;
+</script>
