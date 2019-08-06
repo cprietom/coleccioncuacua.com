@@ -36,6 +36,7 @@
                     {/foreach}
                 </div>
             </div>
+            <a class="all-product-link float-xs-left float-md-right h6" href="{$urls.base_url}{$language.language_code}/10-online-store">{l s='Our Products' d='Modules.Featuredproducts.Shop'}</a>
         </div>
     </div>
 </section>
