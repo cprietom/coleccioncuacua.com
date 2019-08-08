@@ -101,21 +101,3 @@ $(document).ready(function() {
         });
     }
 });
-
-/** ************** **/
-/** Scripts CUACUA **/
-/** ************** **/
-var cuacua_url_base = window.location.protocol + "//" + window.location.host;
-
-// Sección de videos en la home
-// PARA AÑADIR UN NUEVO VIDEO:
-//  1. Incluir en los arrays videos_section_items_es/videos_section_items_en el título del nuevo elemento con el título en español e inglés
-//  2. Incluir en el array videos_section_youtube_ids  un nuevo elemento con el id del video de youtube
-var videos_section_youtube_ids = ["ZndHigMZVjg", "sHh_4X2PoTA", "IO8AxJz2EmY"];
-var videos_section_items_es = ["El tigre Cuacuá (español)", "Cuacua Tiger (inglés)", "Roar Squirrel (inglés)"];
-var videos_section_items_en = ["El tigre Cuacuá (Spanish)", "Cuacua Tiger (English)", "Roar Squirrel (English)"];
-
-var videos_section_items = [videos_section_items_es, videos_section_items_en];
-
-// Sección de descargas en la home
-var downloads_folder = "/themes/bizkick/assets/img/downloads";
