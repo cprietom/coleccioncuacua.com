@@ -1,3 +1,13 @@
+<script type="text/javascript">
+	// PARA AÑADIR UNA NUEVA DESCARGA:
+	//  1. Incluir en este array un nuevo elemento con el título
+	//  2. Incluir en el array de videos_en.html un nuevo elemento con el título en inglés
+	var downloads_section_items = ["Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5"];
+
+	var downloads_section_title = "Descargas";
+	var downloads_section_link_to_all_text = "Ver todas las descargas";
+</script>
+
 <section id="_downloads" class="featured-products clearfix">
 	<div class="container">
 		<div class="product-section-title">
@@ -14,8 +24,7 @@
 </section>
 
 <script type="text/javascript">
-function buildDownloadItem(sectionId, linkToAllURI, value, index, array) {
-	  var downloads_folder = "/themes/bizkick/assets/img/downloads";
+	function buildDownloadItem(sectionId, linkToAllURI, value, index, array) {
 	  var _link = cuacua_url_base + "/" + $("html").attr("lang") + linkToAllURI + "#" + sectionId + "-" + index;
 	  var _img = cuacua_url_base + downloads_folder + "/download" + index + ".png";
 	  return "<div id='" + sectionId + "-" + index +"' class='product-item'>" +
@@ -35,16 +44,10 @@ function buildDownloadItem(sectionId, linkToAllURI, value, index, array) {
 		"</div>";
 	}
 
-var section_id = "_downloads";
-var section_title = "Descargas";
-var section_items = ["Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5"];
-var section_link_to_all_text = "Ver todas las descargas";
-var section_link_to_all_uri = "/content/9-downloads";
-
-fillSection(section_id,
-		section_title,
-		section_items,
-		section_link_to_all_text,
-		section_link_to_all_uri,
-		buildDownloadItem);
+	fillSection("_downloads",
+			downloads_section_title,
+			downloads_section_items,
+			downloads_section_link_to_all_text,
+			"/content/9-downloads",
+			buildDownloadItem);
 </script>
