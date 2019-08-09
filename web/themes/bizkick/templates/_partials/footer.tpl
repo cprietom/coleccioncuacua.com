@@ -54,19 +54,19 @@
                 <div class="cards col-md-6">
                     <ul>
                         <li>
-                            <img src="{$urls.img_url}/paypal.png">
+                            <img src="{$urls.img_url}paypal.png">
                         </li>
                         <li>
-                            <img src="{$urls.img_url}/americanexpress.png">
+                            <img src="{$urls.img_url}americanexpress.png">
                         </li>
                         <li>
-                            <img src="{$urls.img_url}/discover.png">
+                            <img src="{$urls.img_url}discover.png">
                         </li>
                         <li>
-                            <img src="{$urls.img_url}/master.png">
+                            <img src="{$urls.img_url}master.png">
                         </li>
                         <li>
-                            <img src="{$urls.img_url}/visa.png">
+                            <img src="{$urls.img_url}visa.png">
                         </li>
                     </ul>
                 </div>

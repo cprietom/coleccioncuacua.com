@@ -1,0 +1,25 @@
+<section id="_videos" class="featured-products clearfix">
+	<div class="container">
+		<div class="product-section-title">
+			<h1 id="_videos-title">Últimos vídeos</h1>
+		</div>
+		<div class="products-grid">
+			<div class="row">
+				<div id="_videos-row" class="products owl-theme owl-carousel product-slider"></div>
+			</div>
+			<a id="_videos-all" class="all-product-link float-xs-left float-md-right h6" href="#">Ver todos los vídeos</a>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	fillSection(videos_section_id,
+			(cuacua_lang == "es") ? videos_section_title[0] : videos_section_title[1],
+			(cuacua_lang == "es") ? videos_section_items[0] : videos_section_items[1],
+			(cuacua_lang == "es") ? videos_section_link_to_all_text[0] : videos_section_link_to_all_text[1], "/content/8-videos",
+			buildVideoItem);
+
+	videos_section_youtube_ids.forEach(function(value, index, array) {
+		$("#" + videos_section_id + "_iframe" + index).attr("src", "https://www.youtube.com/embed/" + value);
+	});
+</script>
