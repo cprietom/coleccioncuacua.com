@@ -68,24 +68,25 @@ function buildDownloadItem(sectionId, linkToAllURI, value, index) {
 /************************/
 /* PÁGINA DE DESACARGAS */
 /************************/
+var downloads_page_id = "_downloadsPage";
 function buildDownloadGrid(sectionId, arrayItems, numberOfCols) {
     for (var i = 0; i < arrayItems.length; i += numberOfCols) {
         var iFinal = (i + numberOfCols <= arrayItems.length) ? (i + numberOfCols) : arrayItems.length;
         var rowElements = arrayItems.slice(i, iFinal);
-        var _row = buildDownloadRow(sectionId, i, rowElements);
+        var _row = buildDownloadRow(rowElements);
         $("#" + sectionId).append(_row);
     }
 }
 
-function buildDownloadRow(sectionId, iRow, rowElements) {
+function buildDownloadRow(rowElements) {
     var _cols = "";
     for (var i = 0; i < rowElements.length; i++) {
-        _cols += buildDownloadColumn(sectionId, i);
+        _cols += buildDownloadColumn(i);
     }
     return "<div class='cuacua-row'>" + _cols + "</div>";
 }
 
-function buildDownloadColumn(sectionId, index) {
+function buildDownloadColumn(index) {
     var _img = cuacua_url_downloads + "/download" + index + ".png";
     return "<div class='cuacua-column'>" +
         "<img id='" + downloads_section_id + "-" + index + "' src='" + _img + "' style='width:100%' />" +
