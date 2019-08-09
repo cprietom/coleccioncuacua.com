@@ -15,9 +15,9 @@ var roar_videos_section_youtube_ids = ["IO8AxJz2EmY"];
 var roar_videos_section_items_es = ["Roar Squirrel (inglés)"];
 var roar_videos_section_items_en = ["Roar Squirrel (English)"];
 
-var wow_videos_section_youtube_ids = ["IO8AxJz2EmY"];
-var wow_videos_section_items_es = ["Wow Monkey (inglés)"];
-var wow_videos_section_items_en = ["Wow Monkey (English"];
+var wow_videos_section_youtube_ids = []; //["IO8AxJz2EmY"];
+var wow_videos_section_items_es = []; //["Wow Monkey (inglés)"];
+var wow_videos_section_items_en = []; //["Wow Monkey (English"];
 
 var videos_section_title_es = "Últimos vídeos";
 var videos_section_title_en = "Latest videos";
