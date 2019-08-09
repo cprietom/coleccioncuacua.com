@@ -7,9 +7,17 @@
 // PARA AÑADIR UN NUEVO VIDEO:
 //  1. Incluir en los arrays videos_section_items_es/videos_section_items_en el título del nuevo elemento con el título del nuevo vídeo en español e inglés
 //  2. Incluir en el array videos_section_youtube_ids un nuevo elemento con el id del video de youtube
-var videos_section_youtube_ids = ["ZndHigMZVjg", "sHh_4X2PoTA", "IO8AxJz2EmY"];
-var videos_section_items_es = ["El tigre Cuacuá (español)", "Cuacua Tiger (inglés)", "Roar Squirrel (inglés)"];
-var videos_section_items_en = ["El tigre Cuacuá (Spanish)", "Cuacua Tiger (English)", "Roar Squirrel (English)"];
+var cuacua_videos_section_youtube_ids = ["ZndHigMZVjg", "sHh_4X2PoTA"];
+var cuacua_videos_section_items_es = ["El tigre Cuacuá (español)", "Cuacua Tiger (inglés)"];
+var cuacua_videos_section_items_en = ["El tigre Cuacuá (Spanish)", "Cuacua Tiger (English)"];
+
+var roar_videos_section_youtube_ids = ["IO8AxJz2EmY"];
+var roar_videos_section_items_es = ["Roar Squirrel (inglés)"];
+var roar_videos_section_items_en = ["Roar Squirrel (English)"];
+
+var wow_videos_section_youtube_ids = ["IO8AxJz2EmY"];
+var wow_videos_section_items_es = ["Wow Monkey (inglés)"];
+var wow_videos_section_items_en = ["Wow Monkey (English"];
 
 var videos_section_title_es = "Últimos vídeos";
 var videos_section_title_en = "Latest videos";
