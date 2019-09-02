@@ -82,7 +82,7 @@ Header
     float: left;
     width: 100%;
     display: block;
-    padding: 5px 0;
+    padding: 20px 0px 20px 0px;
 }
 #header a:hover {
     color: #f66d1f;
