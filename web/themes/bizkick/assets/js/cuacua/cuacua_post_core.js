@@ -1,5 +1,5 @@
 /************************/
-/* PÁGINA DE DESACARGAS */
+/* Pï¿½GINA DE DESACARGAS */
 /************************/
 var downloads_page_id = "_downloadsPage";
 var downloadsPageElement = document.getElementById(downloads_page_id);
@@ -11,7 +11,7 @@ if (typeof(downloadsPageElement) != "undefined" && downloadsPageElement != null)
 }
 
 /************************/
-/* PÁGINA DE DESACARGAS */
+/* Pï¿½GINA DE VIDEOS */
 /************************/
 var videos_page_id = "_videosPage";
 var videosPageElement = document.getElementById(videos_page_id);
@@ -37,4 +37,17 @@ if (typeof(videosPageElement) != "undefined" && videosPageElement != null) {
     for (var i = 0; i < wow_videos_section_youtube_ids.length; i++) {
         $("#" + wow_videos_id + "_iframe" + i).attr("src", "https://www.youtube.com/embed/" + wow_videos_section_youtube_ids[i]);
     }
+}
+
+/************************/
+/* Pï¿½GINA DE NOVEDADES */
+/************************/
+var news_page_id = "_newsPage";
+var newsPageElement = document.getElementById(news_page_id);
+if (typeof(newsPageElement) != "undefined" && newsPageElement != null) {
+    buildNewsGrid(
+    	news_page_id,
+        (cuacua_lang == "es") ? news_title_items[0] : news_title_items[1],
+        (cuacua_lang == "es") ? news_text_items[0] : news_text_items[1]);
+
 }

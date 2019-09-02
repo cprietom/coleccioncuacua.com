@@ -127,3 +127,27 @@ return "<div id='" + videos_section_id + "-" + index +  "' class='row'>" +
     "</div>" +
     "</div>";
 }
+
+
+/********************/
+/* PÁGINA DE NOVEDADES */
+/********************/
+var news_section_id = "_news";
+var news_title_items = [news_title_items_es, news_title_items_en];
+var news_text_items = [news_text_items_es, news_text_items_en];
+function buildNewsGrid(divId, arrayTitleItems, arrayTextItems) {
+    for (var i = 0; i < arrayTitleItems.length; i++) {
+        var _row = buildNewsRow(i, arrayTitleItems[i], arrayTextItems[i]);
+        $("#" + divId).append(_row);
+    }
+}
+function buildNewsRow(index, title, text) {
+	return "<div id='" + news_section_id + "-" + index +  "' class='row'>" +
+	        "<div class='col-xs-12'>" +
+	    "<div class='cms-block'>" +
+	    "<p>" + title + "</p>" +
+	    "<p>" + text + "</p>" +
+	    "</div>" +
+	    "</div>" +
+	    "</div>";
+	}

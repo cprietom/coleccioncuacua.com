@@ -37,3 +37,16 @@ var downloads_section_title_en = "Downloads";
 
 var downloads_section_link_to_all_text_es = "Ver todas las descargas";
 var downloads_section_link_to_all_text_en = "See all downloads";
+
+/***********
+ * PÁGINAS
+ ***********/
+/* Página de novedades */
+
+//PARA AÑADIR UNA NUEVA NOVEDAD:
+// 1. Incluir en los arrays news_title_items_es/new_title_items_en y news_text_items_es/news_text_items_en el título y texto de la novedad en español e inglés
+var news_title_items_es = ["Novedad1", "Novedad2"];
+var news_title_items_en = ["News1", "News2"];
+
+var news_text_items_es = ["¡¡¡Lanzamiento de la nueva web!!!", "¡¡¡Presentación en Pangea!!!"];
+var news_text_items_en = ["New website!!!", "Presnentation at Pangea!!!"];
