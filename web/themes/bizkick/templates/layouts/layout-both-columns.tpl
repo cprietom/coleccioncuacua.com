@@ -61,7 +61,7 @@
             {hook h="displayWrapperTop"}
             <div class="container">
                 {block name='breadcrumb'}
-                    {include file='_partials/breadcrumb.tpl'}
+                    {*include file='_partials/breadcrumb.tpl'*}
                 {/block}
                 <div class="row">
                     {block name="left_column"}
