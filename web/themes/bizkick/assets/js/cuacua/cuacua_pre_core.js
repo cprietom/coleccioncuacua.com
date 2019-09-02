@@ -62,12 +62,11 @@ function buildDownloadItem(sectionId, linkToAllURI, value, index) {
         "itemscope='' itemtype='http://schema.org/Product'>"
         + "<div class='thumbnail-container'>"
         + "<div class='product-image-block'>"
+        + "<a id='" + sectionId + "_link-" + index + "' href='" + _img + "' target='_blank'>"
         + "<img id='" + sectionId + "_img-" + index + "' src='" + _img + "' />"
+        + "</a>"
         + "</div>"
-        + "<div>"
-        + "<h1 class='h3 product-title' itemprop='name'>"
-        + "<a id='" + sectionId + "_link-" + index + "' href='" + _link + "'>"
-        + value + "</a>" + "</h1>" + "</div>" + "</div>" + "</article>"
+        + "</div>" + "</article>"
         + "</div>";
 }
 
@@ -94,7 +93,9 @@ function buildDownloadRow(rowElements) {
 function buildDownloadColumn(index) {
     var _img = cuacua_url_downloads + "/download" + index + ".png";
     return "<div class='cuacua-column'>" +
+    	"<a href='" + _img + "' target='_blank'>" +
         "<img id='" + downloads_section_id + "-" + index + "' src='" + _img + "' style='width:100%' />" +
+        "</a>" +
         "</div>";
 }
 
@@ -107,22 +108,22 @@ var roar_videos_id = "roar-videos";
 var wow_videos_id = "wow-videos";
 function buildVideoGrid(divId, arrayItems) {
     for (var i = 0; i < arrayItems.length; i++) {
-        var _row = buildVideoRow(divId, i);
+    	var lang = (cuacua_lang == "es") ? (i%2 == 0 ? "Español" : "Inglés") : (i%2 == 0 ? "Spanish" : "English");
+        var _row = buildVideoRow(divId, i, lang);
         $("#" + divId).append(_row);
     }
 }
-function buildVideoRow(divId, index) {
+function buildVideoRow(divId, index, lang) {
 return "<div id='" + videos_section_id + "-" + index +  "' class='row'>" +
         "<div class='col-xs-12'>" +
     "<div class='cms-block'>" +
-    "<p>Lorem ipsum dolor sit amet conse ctetur adipisicing elit, seddo eiusmod tempor incididun.</p>" +
-    "<p>Español</p>" +
     "<div style='position: relative; padding-top: 56.25%;'>" +
         "<iframe id='" + divId + "_iframe" + index + "' style='position: absolute; top: 0; left: 0; width: 100%; height: 100%;'" +
             "src='#' frameborder='0'" +
             "allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'" +
             "allowfullscreen='allowfullscreen'></iframe>" +
     "</div>" +
+    "<p class='cuacua-text-color'><strong>" + lang + "</strong></p>" +
     "</div>" +
     "</div>" +
     "</div>";

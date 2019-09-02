@@ -22,8 +22,8 @@ var wow_videos_section_items_en = []; //["Wow Monkey (English"];
 var videos_section_title_es = "Últimos vídeos";
 var videos_section_title_en = "Latest videos";
 
-var videos_section_link_to_all_text_es = "Ver todos los vídeos";
-var videos_section_link_to_all_text_en = "See all videos";
+var videos_section_link_to_all_text_es = "Ver todos los vídeos >";
+var videos_section_link_to_all_text_en = "See all videos >";
 
 /* Sección de descargas */
 
@@ -35,8 +35,8 @@ var downloads_section_items_en = ["Download1", "Download2", "Download3", "Downlo
 var downloads_section_title_es = "Descargas";
 var downloads_section_title_en = "Downloads";
 
-var downloads_section_link_to_all_text_es = "Ver todas las descargas";
-var downloads_section_link_to_all_text_en = "See all downloads";
+var downloads_section_link_to_all_text_es = "Ver todas las descargas >";
+var downloads_section_link_to_all_text_en = "See all downloads >";
 
 /***********
  * PÁGINAS
