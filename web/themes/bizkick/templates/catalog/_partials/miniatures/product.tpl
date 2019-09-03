@@ -101,7 +101,7 @@
 	                                <span id="product-availability">
 	                                  <i class="material-icons product-unavailable">&#xE14B;</i>{$product.availability_message}
 	                                </span>
-                                </div1>
+                                </div>
                             {else}
                             	<button data-button-action="add-to-cart" class="btn btn-primary">{l s='Add to cart' d='Shop.Theme.Actions'}</button>
                             {/if}
