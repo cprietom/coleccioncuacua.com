@@ -74,29 +74,17 @@ function buildDownloadItem(sectionId, linkToAllURI, value, index) {
 /* PÁGINA DE DESCARGAS */
 /***********************/
 function buildDownloadGrid(pageId, arrayItems, numberOfCols) {
-    for (var i = 0; i < arrayItems.length; i += numberOfCols) {
-        var iFinal = (i + numberOfCols <= arrayItems.length) ? (i + numberOfCols) : arrayItems.length;
-        var rowElements = arrayItems.slice(i, iFinal);
-        var _row = buildDownloadRow(rowElements);
+    for (var i = 0; i < arrayItems.length; i ++) {
+        var _row = buildDownloadLink(i);
         $("#" + pageId).append(_row);
     }
 }
 
-function buildDownloadRow(rowElements) {
-    var _cols = "";
-    for (var i = 0; i < rowElements.length; i++) {
-        _cols += buildDownloadColumn(i);
-    }
-    return "<div class='cuacua-row'>" + _cols + "</div>";
-}
-
-function buildDownloadColumn(index) {
+function buildDownloadLink(index) {
     var _img = cuacua_url_downloads + "/download" + index + ".png";
-    return "<div class='cuacua-column'>" +
-    	"<a href='" + _img + "' target='_blank'>" +
-        "<img id='" + downloads_section_id + "-" + index + "' src='" + _img + "' style='width:100%' />" +
-        "</a>" +
-        "</div>";
+    return "<a href='" + _img + "' target='_blank'>" +
+        "<img id='" + downloads_section_id + "-" + index + "' src='" + _img + "' />" +
+        "</a>";
 }
 
 
