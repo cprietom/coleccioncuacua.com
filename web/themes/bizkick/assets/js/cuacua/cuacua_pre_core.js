@@ -139,4 +139,17 @@ function buildNewsRow(index, title, text) {
 	    "</div>" +
 	    "</div>" +
 	    "</div>";
-	}
+}
+
+/*****************************/
+/* PÁGINAS DE TEXTOS LEGALES */
+/*****************************/
+function buildLegalPage(legal_title_items, legal_text_items) {
+    for (var i = 0; i < legal_title_items.length; i++) {
+        $("#legal_title" + i).text(legal_title_items[i]);
+    }
+
+    for (var i = 0; i < legal_text_items.length; i++) {
+        $("#legal" + i).html(legal_text_items[i]);
+    }
+}

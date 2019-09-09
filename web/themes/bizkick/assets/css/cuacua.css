@@ -69,3 +69,17 @@ a.cuacua-btn {
   box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
   max-width: 100%;
 }
+
+/** Legal pages*/
+.cuacua-legal-page {
+    background-color: #fafafa;
+}
+
+.cuacua-legal-page p {
+    padding: 10px 0 0 0;
+}
+
+.cuacua-legal-page ul {
+    list-style-type: circle;
+    padding-left: 30px;
+}
