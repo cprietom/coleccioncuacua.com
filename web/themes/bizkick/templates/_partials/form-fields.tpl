@@ -62,9 +62,6 @@
               <option value="{$value}" {if $value eq $field.value} selected {/if}>{$label}</option>
             {/foreach}
           </select>
-          <span class="font-weight-bold">
-            <strong>(SOLO PENÍNSULA / ONLY PENINSULA)</strong>
-          </span>
         {/block}
 
       {elseif $field.type === 'radio-buttons'}
