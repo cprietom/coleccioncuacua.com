@@ -1,3 +1,11 @@
+#header .header-nav {
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+}
+
+body#checkout #header .header-nav {
+    padding: 0 0 0 0;!important
+}
+
 .cuacua-text-color {
 	color: #F66D1F;
 }

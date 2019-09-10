@@ -37,6 +37,7 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
+<main>
     <header id="header">
       {block name='header'}
         {include file='checkout/_partials/header.tpl'}
@@ -79,7 +80,7 @@
         {include file='checkout/_partials/footer.tpl'}
       {/block}
     </footer>
-
+</main>
     {block name='javascript_bottom'}
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}
     {/block}
