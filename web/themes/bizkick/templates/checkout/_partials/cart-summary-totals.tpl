@@ -25,17 +25,23 @@
 <div class="card-block cart-summary-totals">
 
   {block name='cart_summary_total'}
-    <div class="cart-summary-line cart-total">
-      <span class="label">{$cart.totals.total.label} {$cart.labels.tax_short}</span>
-      <span class="value">{$cart.totals.total.value}</span>
+    <div class="cart-summary-line clearfix cart-total">
+      <span class="label">{$cart.totals.total_excluding_tax.label}</span>
+      <span class="value price fs_lg">{$cart.totals.total_excluding_tax.value}</span>
+    </div>
+
+    <div class="cart-summary-line clearfix">
+      <span class="label">{$cart.subtotals.tax.label}</span>
+      <span class="value price">{$cart.subtotals.tax.value}</span>
+    </div>
+
+    <div class="cart-summary-line clearfix cart-total" style="padding-top: 10px;">
+      <span class="label">{$cart.totals.total_including_tax.label}</span>
+      <span class="value price fs_lg font-weight-bold">{$cart.totals.total.value}</span>
     </div>
   {/block}
 
   {block name='cart_summary_tax'}
-    <div class="cart-summary-line">
-      <span class="label sub">{$cart.subtotals.tax.label}</span>
-      <span class="value sub">{$cart.subtotals.tax.value}</span>
-    </div>
   {/block}
 
 </div>
