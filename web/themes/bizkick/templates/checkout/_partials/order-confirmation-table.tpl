@@ -104,14 +104,7 @@
             </tr>
           {/if}
         {/foreach}
-        <tr class="sub">
-            <td colspan="2"><hr></td>
-        </tr>
         {if $subtotals.tax.label !== null}
-          <tr class="sub">
-            <td>{$totals.total_excluding_tax.label}</td>
-            <td>{$totals.total_excluding_tax.value}</td>
-          </tr>
           <tr class="sub">
             <td>{$subtotals.tax.label}</td>
             <td>{$subtotals.tax.value}</td>
