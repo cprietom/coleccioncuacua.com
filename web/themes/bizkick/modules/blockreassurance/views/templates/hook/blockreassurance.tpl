@@ -26,10 +26,15 @@
   <div id="block-reassurance">
     <ul>
       {foreach from=$elements item=element}
+        {if stristr($element.image, "verified")}{$url="http://verified"}{/if}
+        {if stristr($element.image, "shipping")}{$url="http://shipping"}{/if}
+        {if stristr($element.image, "swap")}{$url="http://swap"}{/if}
         <li>
           <div class="block-reassurance-item">
-            <img src="{$element.image}" alt="{$element.text}">
-            <span class="h6">{$element.text}</span>
+            <a href="{$url}">
+                <img src="{$element.image}" alt="{$element.text}">
+                <span class="h6">{$element.text}</span>
+            </a>
           </div>
         </li>
       {/foreach}
