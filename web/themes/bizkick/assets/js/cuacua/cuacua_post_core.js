@@ -2,7 +2,7 @@
 /* P�GINA DE DESACARGAS */
 /************************/
 var downloads_page_id = "_downloadsPage";
-var downloadsPageElement = document.getElementById(downloads_page_id);
+var downloadsPageElement = document.getElementsByClassName(downloads_page_id);
 if (typeof(downloadsPageElement) != "undefined" && downloadsPageElement != null) {
     buildDownloadGrid(
         downloads_page_id,
@@ -14,7 +14,7 @@ if (typeof(downloadsPageElement) != "undefined" && downloadsPageElement != null)
 /* P�GINA DE VIDEOS */
 /************************/
 var videos_page_id = "_videosPage";
-var videosPageElement = document.getElementById(videos_page_id);
+var videosPageElement = document.getElementsByClassName(videos_page_id);
 if (typeof(videosPageElement) != "undefined" && videosPageElement != null) {
     buildVideoGrid(
         cuacua_videos_id,

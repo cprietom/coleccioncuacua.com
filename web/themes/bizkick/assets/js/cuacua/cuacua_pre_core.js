@@ -76,7 +76,7 @@ function buildDownloadItem(sectionId, linkToAllURI, value, index) {
 function buildDownloadGrid(pageId, arrayItems, numberOfCols) {
     for (var i = 0; i < arrayItems.length; i ++) {
         var _row = buildDownloadLink(i);
-        $("#" + pageId).append(_row);
+        $("." + pageId).append(_row);
     }
 }
 
