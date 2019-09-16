@@ -1,28 +1,19 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Hola {firstname} {lastname}, 
+{meta_products}
 
-* 
+ID Pedido {order_name} - En tránsito
 
-{meta_products} 
+Su pedido con referencia {order_name} está en camino.
 
-* Su pedido con la referencia {order_name} se encuentra actualmente
-en tránsito. 
+Puede realizar el seguimiento de su paquete mediante el siguiente enlace: {followup}
 
-Puede realizar el seguimiento de su paquete mediante el siguiente
-enlace: {followup} [{followup}] 		 
+Follow your order and download your invoice on our shop, go to the [Order history and details]({history_url}) section of your customer account.
 
-Puede revisar su pedido y descargar la factura desde "Historial de
-pedidos" [{history_url}] de su cuenta de cliente,
-haciendo clic en [{my_account_url}] en nuestra
-tienda. 
+Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: ["Seguimiento de invitado"]({guest_tracking_url}) de nuestra tienda.
 
-Si tiene una cuenta de invitado, puede seguir su pedido desde la
-sección: "Seguimiento de invitado"
-[{guest_tracking_url}?id_order={order_name}] de
-nuestra tienda. 
+[{shop_name}]({shop_url})
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
-
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

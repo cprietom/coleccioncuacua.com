@@ -1,18 +1,17 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Su mensaje al Servicio de Atención al Cliente de {shop_name} 
+Su mensaje ha sido enviado correctamente, ¡gracias por tomarse el tiempo en escribirnos!
 
-Su mensaje ha sido enviado correctamente.
+ID del Pedido #:  {order_name}
 
-ID DEL PEDIDO: {order_name}
+Producto:  {product_name}
 
-PRODUCTO: {product_name}
+Archivo adjunto: {attached_file}
 
-ARCHIVO ADJUNTO: {attached_file} 		 
+Nos pondremos en contacto con usted con la máxima brevedad posible.
 
-Le responderemos tan pronto como sea posible. 
+[{shop_name}]({shop_url})
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
-
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

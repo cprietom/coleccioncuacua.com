@@ -1,13 +1,15 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Hola {firstname} {lastname}, 
+Mensaje desde {shop_name}
 
-Ha recibido un nuevo mensaje de {shop_name} en relación al pedido
-con la referencia {order_name}.
+Ha recibido un nuevo mensaje de {shop_name} en relación al pedido con número de referencia {order_name}.
 
-MENSAJE: {message} 		 
+Mensaje:
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
+{message}
 
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

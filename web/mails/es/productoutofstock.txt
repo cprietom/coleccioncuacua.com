@@ -1,16 +1,13 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Hola, 
+Actualmente hay menos de {last_qty} artículos en stock.
 
-La cobertura de stock es ahora menor que el mínimo especificado en
-{last_qty}.
+Stock disponible: {qty}
 
-STOCK DISPONIBLE: {qty}
+Replenish your inventory, go to the Catalog > Stocks section of your back office to manage your stock.
 
-Te recomendamos que visites la página del producto en el Back Office
-para reponer tu inventario. 		 
+[{shop_name}]({shop_url})
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
-
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

@@ -2,11 +2,11 @@
 
 Hola {firstname} {lastname},
 
-ID Pedido {order_name} - Reembolso procesado
+ID Pedido {order_name} - Pedido cancelado
 
-Hemos procesado su reembolso para su pedido con la referencia {order_name} de {shop_name}.
+Su pedido con número de referencia {order_name} de {shop_name} ha sido cancelado por el comerciante.
 
-Follow your order and download your invoice on our shop, go to the [Order history and details]({history_url}) section of your customer account.
+Diríjase a su cuenta de cliente para obtener más información al respecto.
 
 Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: ["Seguimiento de invitado"]({guest_tracking_url}) de nuestra tienda.
 

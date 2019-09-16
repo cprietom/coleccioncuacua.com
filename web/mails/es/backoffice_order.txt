@@ -1,13 +1,11 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Hola {firstname} {lastname}, 
+Se ha generado un nuevo pedido a su nombre.
 
-Se ha generado un nuevo pedido a su nombre. 
+Por favor, diríjase a {order_link} para completar el pago.
 
-Por favor, diríjase a {order_link} [{order_link}]
-para completar el pago. 		 
+[{shop_name}]({shop_url})
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
-
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

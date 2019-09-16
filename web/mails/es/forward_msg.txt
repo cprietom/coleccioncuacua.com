@@ -1,14 +1,15 @@
+{shop_url}
 
-[{shop_url}] 
+Hola {firstname} {lastname},
 
-Hola {firstname} {lastname}, 
+Servicio al Cliente - Discusión Transferida
 
-{employee} quiere transferirle esta discusión. 
+{employee} quiere transferirle esta discusión.
 
-HISTORIAL DE LA CONVERSACIÓN: {messages}
+Historial de la conversación: {messages}
 
-{employee} añadido "{comment}" 		 
+{employee} añadió "{comment}"
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
+[{shop_name}]({shop_url})
 
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)

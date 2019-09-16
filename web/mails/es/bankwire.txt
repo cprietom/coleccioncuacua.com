@@ -1,38 +1,31 @@
-
-[{shop_url}] 
+{shop_url}
 
 Hola {firstname} {lastname},
 
-¡Gracias por comprar en {shop_name}! 
+¡Gracias por comprar en {shop_name}!
 
-Su pedido con la referencia {order_name} ha sido realizado
-correctamente y será ENVIADO TAN PRONTO COMO RECIBAMOS SU PAGO. 
+ID Pedido {order_name} - Pendiente de Pago
 
-Por favor, recuerde que ha seleccionado transferencia bancaria como
-forma de pago. 
+Su pedido con la referencia {order_name} ha sido completado correctamente y será enviado tan pronto como recibamos tu pago.
 
-Estos son los datos bancarios para su transferencia:
+Método de pago: transferencia bancaria
 
-IMPORTE: {total_paid}
+Ha elegido pagar por transferencia bancaria. Aquí está la información que necesita para realizar la transferencia:
 
-TITULAR DE LA CUENTA: {bankwire_owner}
+Importe:  {total_paid}
 
-DATOS DE LA CUENTA: {bankwire_details}
+Titular de la cuenta:  {bankwire_owner}
 
-DIRECCIÓN BANCARIA: {bankwire_address}
+Datos de la cuenta: {bankwire_details}
 
-Por favor, incluya el número de referencia de su pedido en los
-detalles de la transferencia bancaria. 		 
+Dirección bancaria: {bankwire_address}
 
-Puede revisar su pedido y descargar la factura desde "Historial de
-pedidos" [{history_url}] de su cuenta de cliente,
-haciendo clic en [{my_account_url}] en nuestra
-tienda. 
+Por favor, incluya el número de referencia de su pedido en los detalles de la transferencia bancaria.
 
-Si tiene una cuenta de invitado, puede seguir su pedido desde la
-sección: "Seguimiento de invitado"
-[{guest_tracking_url}] de nuestra tienda. 
+Follow your order and download your invoice on our shop, go to the [Order history and details]({history_url}) section of your customer account.
 
-{shop_name} [{shop_url}] powered by
-PrestaShop(tm) [http://www.prestashop.com/] 
+Si tiene una cuenta de invitado, puede seguir su pedido desde la sección: ["Seguimiento de invitado"]({guest_tracking_url}) de nuestra tienda.
 
+[{shop_name}]({shop_url})
+
+Powered by [PrestaShop](https://www.prestashop.com/?utm_source=marchandprestashop&utm_medium=e-mail=utm_campaign=footer_1-7)
