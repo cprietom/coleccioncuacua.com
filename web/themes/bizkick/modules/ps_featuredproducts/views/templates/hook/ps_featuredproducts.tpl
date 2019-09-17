@@ -36,7 +36,12 @@
                     {/foreach}
                 </div>
             </div>
-            <a class="all-product-link float-xs-left float-md-right h6" href="{$urls.base_url}{$language.language_code}/10-online-store">{l s='Our Products' d='Modules.Featuredproducts.Shop'}</a>
+            {if $language.language_code == "es"}
+                {assign var=online_store value="tienda-online"}
+            {else}
+                {assign var=online_store value="online-store"}
+            {/if}
+                <a class="all-product-link float-xs-left float-md-right h6" href="{$urls.base_url}{$language.language_code}/3-{$online_store}">{l s='Our Products' d='Modules.Featuredproducts.Shop'}</a>
         </div>
     </div>
 </section>
