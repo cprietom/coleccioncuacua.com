@@ -16,26 +16,35 @@ if (typeof(downloadsPageElement) != "undefined" && downloadsPageElement != null)
 var videos_page_id = "_videosPage";
 var videosPageElement = document.getElementsByClassName(videos_page_id);
 if (typeof(videosPageElement) != "undefined" && videosPageElement != null) {
+    var initialIndex = 0;
     buildVideoGrid(
         cuacua_videos_id,
-        (cuacua_lang == "es") ? cuacua_videos_section_items[0] : cuacua_videos_section_items[1]);
+        (cuacua_lang == "es") ? cuacua_videos_section_items[0] : cuacua_videos_section_items[1],
+        initialIndex);
 
+    initialIndex += cuacua_videos_section_items[0].length;
     buildVideoGrid(
         roar_videos_id,
-        (cuacua_lang == "es") ? roar_videos_section_items[0] : roar_videos_section_items[1]);
+        (cuacua_lang == "es") ? roar_videos_section_items[0] : roar_videos_section_items[1],
+        initialIndex);
 
+    initialIndex += roar_videos_section_items[0].length;
     buildVideoGrid(
         wow_videos_id,
-        (cuacua_lang == "es") ? wow_videos_section_items[0] : wow_videos_section_items[1]);
+        (cuacua_lang == "es") ? wow_videos_section_items[0] : wow_videos_section_items[1],
+        initialIndex);
 
+    initialIndex = 0;
     for (var i = 0; i < cuacua_videos_section_youtube_ids.length; i++) {
-        $("#" + cuacua_videos_id + "_iframe" + i).attr("src", "https://www.youtube.com/embed/" + cuacua_videos_section_youtube_ids[i]);
+        $("#" + cuacua_videos_id + "_iframe" + (initialIndex+i)).attr("src", "https://www.youtube.com/embed/" + cuacua_videos_section_youtube_ids[i]);
     }
+    initialIndex += cuacua_videos_section_youtube_ids.length;
     for (var i = 0; i < roar_videos_section_youtube_ids.length; i++) {
-        $("#" + roar_videos_id + "_iframe" + i).attr("src", "https://www.youtube.com/embed/" + roar_videos_section_youtube_ids[i]);
+        $("#" + roar_videos_id + "_iframe" + (initialIndex+i)).attr("src", "https://www.youtube.com/embed/" + roar_videos_section_youtube_ids[i]);
     }
+    initialIndex += roar_videos_section_youtube_ids.length;
     for (var i = 0; i < wow_videos_section_youtube_ids.length; i++) {
-        $("#" + wow_videos_id + "_iframe" + i).attr("src", "https://www.youtube.com/embed/" + wow_videos_section_youtube_ids[i]);
+        $("#" + wow_videos_id + "_iframe" + (initialIndex+i)).attr("src", "https://www.youtube.com/embed/" + wow_videos_section_youtube_ids[i]);
     }
 }
 

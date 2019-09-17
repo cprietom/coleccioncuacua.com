@@ -31,7 +31,7 @@ var videos_section_youtube_ids = cuacua_videos_section_youtube_ids.concat(roar_v
 
 function buildVideoItem(sectionId, linkToAllURI, value, index) {
     var _link = cuacua_url_base + cuacua_lang + linkToAllURI + "#" + sectionId + "-" + index;
-    return "<div id='" + sectionId + "-" + index + "' class='product-item'>"
+    return "<div class='product-item'>"
         + "<article class='product-miniature js-product-miniature' itemscope='' itemtype='http://schema.org/Product'>"
         + "<div class='thumbnail-container'>"
         + "<div class='product-image-block'>"
@@ -43,7 +43,7 @@ function buildVideoItem(sectionId, linkToAllURI, value, index) {
         + "</div>"
         + "<div>"
         + "<h1 class='h3 product-title' itemprop='name'>"
-        + "<a id='" + sectionId + "_link-" + index + "' href='" + _link + "'>"
+        + "<a href='" + _link + "'>"
         + value + "</a>" + "</h1>" + "</div>" + "</div>" + "</article>"
         + "</div>";
 }
@@ -94,10 +94,10 @@ function buildDownloadLink(index) {
 var cuacua_videos_id = "cuacua-videos";
 var roar_videos_id = "roar-videos";
 var wow_videos_id = "wow-videos";
-function buildVideoGrid(divId, arrayItems) {
+function buildVideoGrid(divId, arrayItems, initialIndex) {
     for (var i = 0; i < arrayItems.length; i++) {
     	var lang = (cuacua_lang == "es") ? (i%2 == 0 ? "Español" : "Inglés") : (i%2 == 0 ? "Spanish" : "English");
-        var _row = buildVideoRow(divId, i, lang);
+        var _row = buildVideoRow(divId, initialIndex+i, lang);
         $("#" + divId).append(_row);
     }
 }
