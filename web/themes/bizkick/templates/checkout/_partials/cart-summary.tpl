@@ -57,6 +57,9 @@
           <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-{$subtotal.type}">
             <span class="label">{$subtotal.label}</span>
             <span class="value">{$subtotal.value}</span>
+            {if $subtotal.type === 'shipping'}
+              <div><small class="value">c: {$country_name} {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
+            {/if}
           </div>
         {/if}
       {/foreach}
