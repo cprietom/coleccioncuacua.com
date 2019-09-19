@@ -300,13 +300,12 @@ class OrderControllerCore extends FrontController
         //create an address object by retrieving the id from the current cart.
         $address = new Address($this->context->cart->id_address_delivery);
         //now the country name will be in the "$address->country" field so if you want to pass it to your smarty template use:
-        if ($address == '') {
-            $address = $this->shop->address->country;
+        if ($this->context->cart->id_address_delivery == 0) {
+            $selected_country = Country::getNameById($this->context->cookie->id_lang, Configuration::get('PS_COUNTRY_DEFAULT'));
+        } else {
+            $selected_country = $address->country;
         }
-        $this->context->smarty->assign('country_name',  $address->country);
-        $this->context->smarty->assign('shop_country_name',  $this->shop->address->country);
-        $numerico = (int) 20;
-        $this->context->smarty->assign('numerico',  $numerico);
+        $this->context->smarty->assign('country_name',  $selected_country);
 
         parent::initContent();
         $this->setTemplate('checkout/checkout');

@@ -38,7 +38,7 @@
           </span>
           <span class="value">{$subtotal.value}</span>
           {if $subtotal.type === 'shipping'}
-              <div><small class="value">n2: {$numerico} c: {$country_name} s: {$shop_country_name} {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
+              <div><small>({$shop.address.country})</small> {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
           {/if}
         </div>
       {/if}

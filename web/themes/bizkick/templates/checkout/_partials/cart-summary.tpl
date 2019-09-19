@@ -55,10 +55,10 @@
       {foreach from=$cart.subtotals item="subtotal"}
         {if $subtotal && $subtotal.type !== 'tax'}
           <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-{$subtotal.type}">
-            <span class="label">{$subtotal.label}</span>
+            <span class="label">{$subtotal.label} <i class="material-icons">info</i></span>
             <span class="value">{$subtotal.value}</span>
             {if $subtotal.type === 'shipping'}
-              <div><small class="value">n3: {$numerico} c: {$country_name} s: {$shop_country_name} {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
+              <div><small>({$country_name})</small></div>
             {/if}
           </div>
         {/if}
