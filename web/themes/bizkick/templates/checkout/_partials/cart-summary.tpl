@@ -57,7 +57,7 @@
           <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-{$subtotal.type}">
             <span class="label">
                   {$subtotal.label}
-                  {if $subtotal.type === 'shipping' && $cart.id_address_delivery == 0}
+                  {if $subtotal.type === 'shipping'}
                     <span title="{l s='Gastos de envío para el destino indicado. Es posible que cambien si se modifica el destino.'}" class="mytooltip">
                         <i class="material-icons">info</i>
                     </span>&nbsp;
