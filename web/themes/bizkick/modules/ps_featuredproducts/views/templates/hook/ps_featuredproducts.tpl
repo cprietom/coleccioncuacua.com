@@ -41,7 +41,7 @@
             {else}
                 {assign var=online_store value="online-store"}
             {/if}
-                <a class="all-product-link float-xs-left float-md-right h6" href="{$urls.base_url}{$language.language_code}/3-{$online_store}">{l s='Our Products' d='Modules.Featuredproducts.Shop'}</a>
+                <a class="all-product-link float-xs-left float-md-right h6" href="{$urls.base_url}{$language.language_code}/3-{$online_store}">{l s='Ver todos nuestros productos >'}</a>
         </div>
     </div>
 </section>
