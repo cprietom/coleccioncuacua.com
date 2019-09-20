@@ -50,7 +50,11 @@
             {/if}
           >
             <i class="material-icons shopping-cart">&#xE547;</i>
-            {l s='Add to cart' d='Shop.Theme.Actions'}
+            {if $product.quantity <= '0'}
+                {l s='Reservar ahora'}
+            {else}
+                {l s='Add to cart' d='Shop.Theme.Actions'}
+            {/if}
           </button>
         </div>
       </div>
@@ -59,7 +63,7 @@
     {block name='product_availability'}
       <span id="product-availability">
         {if $product.show_availability && $product.availability_message}
-          {if $product.availability == 'available'}
+          {if $product.availability == 'available' && $product.quantity > '0'}
             <i class="material-icons product-available">&#xE5CA;</i>
           {elseif $product.availability == 'last_remaining_items'}
             <i class="material-icons product-last-items">&#xE002;</i>

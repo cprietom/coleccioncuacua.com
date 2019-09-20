@@ -96,12 +96,7 @@
                             <input type="hidden" value="{$product.id_product}" name="id_product">
                             <input type="hidden" class="input-group form-control" value="1" name="qty" />
               				{if $product.quantity <= '0'}
-              				    {if $language.language_code == "es"}
-              				        {assign var=reserve_now value="Reservar ahora"}
-                                {else}
-                                    {assign var=reserve_now value="Reserve now"}
-                                {/if}
-                                <button data-button-action="add-to-cart" class="btn btn-primary" title="{$product.availability_message}">{$reserve_now}</button>
+                                <button data-button-action="add-to-cart" class="btn btn-primary" title="{$product.availability_message}">{l s='Reservar ahora'}</button>
                                 <div style="clear: both; margin-top: 5px;">
 	                                <span id="product-availability">
 	                                  <i class="material-icons product-unavailable">&#xE14B;</i>{$product.availability_message}
