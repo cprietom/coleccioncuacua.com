@@ -66,7 +66,7 @@
             <span class="value">{$subtotal.value}</span>
             {if $subtotal.type === 'shipping'}
               <div><small>({$country_name})</small></div>
-              <div><span><a href="#">{l s='Consultar tabla de gastos de envío'}</a></span></div>
+              <div><span><a href="#">{l s='Consultar gastos de envío'}</a></span></div>
             {/if}
           </div>
         {/if}

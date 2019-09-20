@@ -45,12 +45,12 @@
           {if $subtotal.type === 'shipping'}
               <div>
                 <small>
-                    ({$shop.address.country})&nbsp;
+                    ({$country_name})&nbsp;
                 </small>
-                {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}
+ {**                 {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal} *}
               </div>
               <div>
-                <span><a href="#">Consultar tabla de gastos de envío</a></span>
+                <span><a href="#">{l s='Consultar gastos de envío'}</a></span>
               </div>
           {/if}
         </div>
