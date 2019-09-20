@@ -68,7 +68,7 @@
  {**                   {hook h='displayCheckoutSubtotalDetails' subtotal=$cart.subtotals.shipping}  *}
               </p>
               <p>
-                <span><a href="#">{l s='Consultar gastos de envío'}</a></span>
+                <span><a href="/content/16-aeu-legal-shipping-and-payment">{l s='Consultar gastos de envío'}</a></span>
               </p>
               {if $cart.subtotals.tax}
  {**             	<p><strong>{$cart.subtotals.tax.label}</strong>&nbsp;{$cart.subtotals.tax.value}</p> *}
