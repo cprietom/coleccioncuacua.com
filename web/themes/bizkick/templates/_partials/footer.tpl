@@ -48,7 +48,6 @@
                             <a class="_blank" href="http://www.coleccioncuacua.com">
                                 {l s='%copyright% %year% - Colección Cuacuá' sprintf=['%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
                             </a>
-                            <a href="#" title="tooltip de prueba" class="mytooltip">tooltip</a>
                         {/block}
                     </p>
                 </div>
