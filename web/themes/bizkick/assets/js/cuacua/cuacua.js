@@ -1,3 +1,8 @@
+$(document).ready(function(){
+    $('.mytooltip').tooltip();
+});
+
+
 /********/
 /* HOME */
 /********/
