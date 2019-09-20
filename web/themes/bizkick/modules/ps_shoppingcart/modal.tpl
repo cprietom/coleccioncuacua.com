@@ -60,7 +60,7 @@
               <p>
                   <strong>{l s='Total shipping:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.subtotals.shipping.value}&nbsp;
                   <small class="value">
-                      ({$country_name})&nbsp;
+                      ({$ship_to})&nbsp;
                       <span title="{l s='Gastos de envío para el destino indicado. Es posible que cambien si se modifica el destino.'}" class="mytooltip">
                         <i class="material-icons">info</i>
                       </span>&nbsp;

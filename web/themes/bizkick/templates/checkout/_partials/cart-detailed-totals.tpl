@@ -45,7 +45,7 @@
           {if $subtotal.type === 'shipping'}
               <div>
                 <small>
-                    ({$country_name})&nbsp;
+                    ({$ship_to})&nbsp;
                 </small>
  {**                 {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal} *}
               </div>

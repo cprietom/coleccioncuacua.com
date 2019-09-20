@@ -476,10 +476,19 @@ class FrontControllerCore extends Controller
         //now the country name will be in the "$address->country" field so if you want to pass it to your smarty template use:
         if ($this->context->cart->id_address_delivery == 0) {
             $selected_country = Country::getNameById($this->context->cookie->id_lang, Configuration::get('PS_COUNTRY_DEFAULT'));
+            $selected_id_zone = Country::getIdZone(Configuration::get('PS_COUNTRY_DEFAULT'));
         } else {
             $selected_country = $address->country;
+            $selected_id_zone = State::getIdZone($address->id_state);
         }
-        $this->context->smarty->assign('country_name',  $selected_country);
+
+        if ($selected_id_zone == 0) {
+            $ship_to = $selected_country;
+        } else {
+            $zone = new Zone($selected_id_zone);
+            $ship_to = $zone->name;
+        }
+        $this->context->smarty->assign('ship_to',  $ship_to);
 
         Hook::exec('actionFrontControllerAfterInit');
     }
