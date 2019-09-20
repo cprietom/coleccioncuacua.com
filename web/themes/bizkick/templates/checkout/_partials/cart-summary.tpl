@@ -55,10 +55,18 @@
       {foreach from=$cart.subtotals item="subtotal"}
         {if $subtotal && $subtotal.type !== 'tax'}
           <div class="cart-summary-line cart-summary-subtotals" id="cart-subtotal-{$subtotal.type}">
-            <span class="label">{$subtotal.label} <i class="material-icons">info</i></span>
+            <span class="label">
+                  {$subtotal.label}
+                  {if $subtotal.type === 'shipping' && $cart.id_address_delivery == 0}
+                    <span title="{l s='Gastos de envío para el destino indicado. Es posible que cambien si se modifica el destino.'}" class="mytooltip">
+                        <i class="material-icons">info</i>
+                    </span>&nbsp;
+                  {/if}
+            </span>
             <span class="value">{$subtotal.value}</span>
             {if $subtotal.type === 'shipping'}
               <div><small>({$country_name})</small></div>
+              <div><span><a href="#">{l s='Consultar tabla de gastos de envío'}</a></span></div>
             {/if}
           </div>
         {/if}

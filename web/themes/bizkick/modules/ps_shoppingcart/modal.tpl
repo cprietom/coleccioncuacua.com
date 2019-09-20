@@ -61,10 +61,14 @@
                   <strong>{l s='Total shipping:' d='Shop.Theme.Checkout'}</strong>&nbsp;{$cart.subtotals.shipping.value}&nbsp;
                   <small class="value">
                       ({$shop.address.country})&nbsp;
-                      <i class="material-icons">info</i>&nbsp;
+                      <span title="{l s='Gastos de envío para el destino indicado. Es posible que cambien si se modifica el destino.'}" class="mytooltip">
+                        <i class="material-icons">info</i>
+                      </span>&nbsp;
                   </small>
-                  <span>pruebaaa</span>
                   {hook h='displayCheckoutSubtotalDetails' subtotal=$cart.subtotals.shipping}
+              </p>
+              <p>
+                <span><a href="#">{l s='Consultar tabla de gastos de envío'}</a></span>
               </p>
               {if $cart.subtotals.tax}
  {**             	<p><strong>{$cart.subtotals.tax.label}</strong>&nbsp;{$cart.subtotals.tax.value}</p> *}

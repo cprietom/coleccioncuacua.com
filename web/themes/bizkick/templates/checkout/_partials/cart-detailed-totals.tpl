@@ -34,11 +34,24 @@
               {$cart.summary_string}
             {else}
               {$subtotal.label}
+              {if $subtotal.type === 'shipping'}
+                <span title="{l s='Gastos de envío para el destino indicado. Es posible que cambien si se modifica el destino.'}" class="mytooltip">
+                    <i class="material-icons">info</i>
+                </span>&nbsp;
+              {/if}
             {/if}
           </span>
           <span class="value">{$subtotal.value}</span>
           {if $subtotal.type === 'shipping'}
-              <div><small>({$shop.address.country})</small> {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}</small></div>
+              <div>
+                <small>
+                    ({$shop.address.country})&nbsp;
+                </small>
+                {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal}
+              </div>
+              <div>
+                <span><a href="#">Consultar tabla de gastos de envío</a></span>
+              </div>
           {/if}
         </div>
       {/if}
