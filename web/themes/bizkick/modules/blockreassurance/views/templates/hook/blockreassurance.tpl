@@ -26,9 +26,9 @@
   <div id="block-reassurance">
     <ul>
       {foreach from=$elements item=element}
-        {if stristr($element.image, "verified")}{$url="http://verified"}{/if}
-        {if stristr($element.image, "shipping")}{$url="http://shipping"}{/if}
-        {if stristr($element.image, "swap")}{$url="http://swap"}{/if}
+        {if stristr($element.image, "verified")}{$url="/content/2-politica-de-privacidad"}{/if}
+        {if stristr($element.image, "shipping")}{$url="/content/16-aeu-legal-shipping-and-payment"}{/if}
+        {if stristr($element.image, "swap")}{$url="/content/11-devoluciones"}{/if}
         <li>
           <div class="block-reassurance-item">
             <a href="{$url}">
