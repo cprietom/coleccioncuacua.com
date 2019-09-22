@@ -64,7 +64,7 @@
 {/block}
 
 {block name='hook_extra'}
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="https://code.jquery.com/jquery-latest.min.js"></script>
 
 	<script type="text/javascript">
 		var cuacua_lang = "{$language.language_code}";
