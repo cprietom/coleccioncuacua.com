@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
+{**
 <div class="footer-link wrapper">
 <div class="footer-title">
   <h3 class="hidden-sm-down">{l s='Information' d='Modules.Legalcompliance.Shop'}</h3>
@@ -44,3 +45,4 @@
     {/foreach}
   </ul>
 </div>
+*}
