@@ -378,30 +378,38 @@ class Ps_Emailsubscription extends Module implements WidgetInterface
      */
     public function newsletterRegistration($hookName = null)
     {
-        if (empty($_POST['blockHookName']) || $_POST['blockHookName'] !== $hookName) {
-            return false;
+
+        $param_email = $_POST['email'];
+        if (empty($param_email)) {
+            $param_email = $_GET['email'];
         }
-        if (empty($_POST['email']) || !Validate::isEmail($_POST['email'])) {
+
+        $param_action = $_POST['action'];
+        if ($param_action === null) {
+            $param_action = $_GET['action'];
+        }
+
+        if (empty($param_email) || !Validate::isEmail($param_email)) {
             return $this->error = $this->trans('Invalid email address.', array(), 'Shop.Notifications.Error');
-        } elseif ($_POST['action'] == '1') {
-            $register_status = $this->isNewsletterRegistered($_POST['email']);
+        } elseif ($param_action == '1') {
+            $register_status = $this->isNewsletterRegistered($param_email);
 
             if ($register_status < 1) {
                 return $this->error = $this->trans('This email address is not registered.', array(), 'Modules.Emailsubscription.Shop');
             }
 
-            if (!$this->unregister($_POST['email'], $register_status)) {
+            if (!$this->unregister($param_email, $register_status)) {
                 return $this->error = $this->trans('An error occurred while attempting to unsubscribe.', array(), 'Modules.Emailsubscription.Shop');
             }
 
             return $this->valid = $this->trans('Unsubscription successful.', array(), 'Modules.Emailsubscription.Shop');
-        } elseif ($_POST['action'] == '0') {
-            $register_status = $this->isNewsletterRegistered($_POST['email']);
+        } elseif ($param_action == '0') {
+            $register_status = $this->isNewsletterRegistered($param_email);
             if ($register_status > 0) {
                 return $this->error = $this->trans('This email address is already registered.', array(), 'Modules.Emailsubscription.Shop');
             }
 
-            $email = pSQL($_POST['email']);
+            $email = pSQL($param_email);
             if (!$this->isRegistered($register_status)) {
                 if (Configuration::get('NW_VERIFICATION_EMAIL')) {
                     // create an unactive entry in the newsletter database
@@ -515,9 +523,9 @@ class Ps_Emailsubscription extends Module implements WidgetInterface
     protected function unregister($email, $register_status)
     {
         if ($register_status == self::GUEST_REGISTERED) {
-            $sql = 'DELETE FROM '._DB_PREFIX_.'emailsubscription WHERE `email` = \''.pSQL($_POST['email']).'\' AND id_shop = '.$this->context->shop->id;
+            $sql = 'DELETE FROM '._DB_PREFIX_.'emailsubscription WHERE `email` = \''.pSQL($email).'\' AND id_shop = '.$this->context->shop->id;
         } elseif ($register_status == self::CUSTOMER_REGISTERED) {
-            $sql = 'UPDATE '._DB_PREFIX_.'customer SET `newsletter` = 0 WHERE `email` = \''.pSQL($_POST['email']).'\' AND id_shop = '.$this->context->shop->id;
+            $sql = 'UPDATE '._DB_PREFIX_.'customer SET `newsletter` = 0 WHERE `email` = \''.pSQL($email).'\' AND id_shop = '.$this->context->shop->id;
         }
 
         if (!isset($sql) || !Db::getInstance()->execute($sql)) {
@@ -737,6 +745,9 @@ class Ps_Emailsubscription extends Module implements WidgetInterface
     protected function sendConfirmationEmail($email)
     {
         $language = new Language($this->context->language->id);
+        $vars = array(
+            '{email}' => $email
+        );
         return Mail::Send(
             $this->context->language->id,
             'newsletter_conf',
@@ -746,7 +757,7 @@ class Ps_Emailsubscription extends Module implements WidgetInterface
                 'Emails.Subject',
                 $language->locale
             ),
-            array(),
+            $vars,
             pSQL($email),
             null,
             null,
