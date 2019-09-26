@@ -378,8 +378,6 @@ class Ps_Emailsubscription extends Module implements WidgetInterface
      */
     public function newsletterRegistration($hookName = null)
     {
-        $this->sendConfirmationEmail($email);
-
         if (empty($_POST['blockHookName']) || $_POST['blockHookName'] !== $hookName) {
             return false;
         }
