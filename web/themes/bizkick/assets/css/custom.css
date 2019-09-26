@@ -82,7 +82,7 @@ Header
     float: left;
     width: 100%;
     display: block;
-    padding: 20px 0px 20px 0px;
+    padding: 5px 0px 0px 0px;
 }
 #header a:hover {
     color: #f66d1f;
@@ -96,6 +96,7 @@ Header
     height: 45px;
     padding-left: 15px;
     margin: 2px 0 2px;
+    padding-top: 10px;
 }
 #_desktop_cart .blockcart{
     float: right;
