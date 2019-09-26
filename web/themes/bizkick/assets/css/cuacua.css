@@ -3,7 +3,37 @@
 }
 
 body#checkout #header .header-nav {
-    padding: 0 0 0 0;!important
+    padding: 0 0 0 0;!important;
+}
+
+.block-social {
+    padding-top: 10px!important;
+}
+
+.block-social ul > li {
+    background-color: gray!important;
+    border-radius: 50%!important;
+}
+
+.block-social ul > li:hover {
+    background-color: #F66D1F!important;
+}
+
+@media(max-width: 479px) {
+    .block-social ul > li {
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
+}
+
+.facebook {
+    background-size: contain !important;
+}
+.youtube {
+    background-size: contain !important;
+}
+.instagram {
+    background-size: contain !important;
 }
 
 .cuacua-text-color {
