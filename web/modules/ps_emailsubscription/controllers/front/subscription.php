@@ -41,10 +41,8 @@ class Ps_EmailsubscriptionSubscriptionModuleFrontController extends ModuleFrontC
         $this->variables['msg'] = '';
         $this->variables['conditions'] = Configuration::get('NW_CONDITIONS', $this->context->language->id);
 
-        $this->module->newsletterRegistration();
-
         if (Tools::isSubmit('submitNewsletter')) {
-      
+            $this->module->newsletterRegistration();
             if ($this->module->error) {
                 $this->variables['msg'] = $this->module->error;
                 $this->variables['nw_error'] = true;
