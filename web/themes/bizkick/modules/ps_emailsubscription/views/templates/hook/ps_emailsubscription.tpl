@@ -54,7 +54,7 @@
                         <input type="hidden" name="action" value="0">
                         <div class="clearfix"></div>
                     </div>
-                    <div class="col-xs-12">
+                    <div class="col-xs-12" style="padding-top: 10px;">
                         {if $conditions}
                             <p>{$conditions}</p>
                         {/if}
