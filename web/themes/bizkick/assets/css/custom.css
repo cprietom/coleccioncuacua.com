@@ -271,13 +271,11 @@ Header
     margin-right: 0;
     width: 50px;
     height: 30px;
-    background-color: #333;
     right: 0;
 }
 .image-slider-block .carousel-control .icon-prev{
     width: 50px;
     height: 30px;
-    background-color: #333;
 
 }
 .image-slider-block .carousel .carousel-control .icon-prev i,
