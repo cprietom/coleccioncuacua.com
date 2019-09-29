@@ -11,8 +11,10 @@ body#checkout #header .header-nav {
 }
 
 .block-social ul > li {
-    background-color: gray!important;
+    background-color: #dddddd !important;
     border-radius: 50%!important;
+    height: 2rem;
+    width: 2rem;
 }
 
 .block-social ul > li:hover {
