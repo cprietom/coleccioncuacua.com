@@ -50,7 +50,7 @@
  {**                 {hook h='displayCheckoutSubtotalDetails' subtotal=$subtotal} *}
               </div>
               <div>
-                <span><a href="/content/16-aeu-legal-shipping-and-payment">{l s='Consultar gastos de envío'}</a></span>
+                <span><a href="/content/16-aeu-legal-shipping-and-payment" target="_blank">{l s='Consultar gastos de envío'}</a></span>
               </div>
           {/if}
         </div>
