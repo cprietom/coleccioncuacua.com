@@ -84,5 +84,5 @@ if (typeof(avisoLegalPageElement) != "undefined" && avisoLegalPageElement != nul
 }
 
 if (typeof(legal_title_items) != "undefined" && legal_title_items.length > 0) {
-    buildLegalPage(legal_title_items, legal_text_items);
+//    buildLegalPage(legal_title_items, legal_text_items);
 }
