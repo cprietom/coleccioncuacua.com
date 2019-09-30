@@ -1,6 +1,6 @@
 {shop_url}
 
-Hola {firstname} {lastname},
+Hola {email},
 
 Su mensaje ha sido enviado correctamente, ¡gracias por tomarse el tiempo en escribirnos!
 
