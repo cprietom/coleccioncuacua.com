@@ -38,6 +38,13 @@ body#checkout #header .header-nav {
     background-size: contain !important;
 }
 
+.cuacua-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
 .cuacua-text-color {
 	color: #F66D1F;
 }
@@ -122,6 +129,6 @@ a.cuacua-btn {
 
 /** Styles for the videos section of the home page */
 .cuacua-videos-section {
-    padding-top: 20px;
+    padding: 20px 0 20px 0;
     background-color: #eeeeee !important;
 }
