@@ -154,16 +154,6 @@ Header
         max-width: 720px;
     }
 }
-@media(min-width: 992px) {
-    #header .navbar-block {
-        max-width: 960px;
-    }
-}
-@media(min-width: 1200px) {
-    #header .navbar-block {
-        max-width: 1140px;
-    }
-}
 #header .navbar-block .top-menu {
     position: relative;
     margin: 0;
