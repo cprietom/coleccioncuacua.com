@@ -6,6 +6,15 @@ body#checkout #header .header-nav {
     padding: 0 0 0 0 !important;
 }
 
+/** Fix unbalanced button in 'you alrso may like' section */
+body.tax-display-enabled .product-accessories .product-description {
+    height: auto !important;
+}
+
+body.tax-display-enabled .product-accessories .thumbnail-container {
+	height: 468px;
+}
+
 .block-social {
     padding-top: 10px !important;
 }
