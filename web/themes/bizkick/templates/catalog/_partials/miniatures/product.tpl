@@ -67,7 +67,6 @@
                         <h1 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h1>
                         {/block}
                         {block name='product_description_short'}
-                        <div class="product-short-desc" id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
                     {/block}
                     {block name='product_price_and_shipping'}
                         {if $product.show_price}
