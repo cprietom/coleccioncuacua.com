@@ -47,6 +47,34 @@ body.tax-display-enabled .product-accessories .thumbnail-container {
     background-size: contain !important;
 }
 
+.cuacua-paragraph {
+    margin: 0 0 10px 0;
+}
+
+.cuacua-font-size-lg {
+    font-size: 22px;
+}
+
+.cuacua-font-size-md {
+    font-size: 18px;
+}
+
+@media(max-width: 767px) {
+    .cuacua-font-size-lg {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 639px) {
+    .cuacua-font-size-lg, .cuacua-font-size-md {
+        font-size: 16px;
+    }
+}
+
+.cuacua-font-size-big {
+    font-size: 22px;
+}
+
 .cuacua-section {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -140,4 +168,8 @@ a.cuacua-btn {
 .cuacua-videos-section {
     padding: 20px 0 20px 0;
     background-color: #eeeeee !important;
+}
+
+.cuacua-bold {
+    font-weight: bold;
 }
