@@ -47,6 +47,10 @@ body.tax-display-enabled .product-accessories .thumbnail-container {
     background-size: contain !important;
 }
 
+/******************/
+/** Cuacua styles */
+/******************/
+
 .cuacua-paragraph {
     margin: 0 0 10px 0;
 }
@@ -135,6 +139,17 @@ a.cuacua-btn {
 
 .all-product-link {
 	color: #1eae98!important;
+}
+
+/** Styles for the news page */
+.cuacua-news-title {
+    border-bottom: solid;
+    margin: 40px 0px 25px 0px;
+}
+
+.cuacua-news-body {
+    border-bottom: solid;
+    margin: 20px 0px 0px 0px;
 }
 
 /** Styles for the downloads page */
