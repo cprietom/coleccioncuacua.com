@@ -35,6 +35,12 @@
       <div class="text-sm-center">
         <button type="button" class="btn btn-primary disabled" disabled>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</button>
       </div>
+    {elseif $cart.products_count > 20 }
+      <div class="text-sm-center">
+        <button type="button" class="btn btn-primary disabled" disabled>{l s='Proceed to checkout' d='Shop.Theme.Actions'}</button>
+        <br />
+        <strong>{l s='Por favor, póngase en contacto con nosotros en pedidos@coleccioncuacua.com para pedidos superiores a 20 artículos'}</strong>
+      </div>
     {else}
       <div class="text-sm-center">
         <a href="{$urls.pages.order}" class="btn btn-primary">{l s='Proceed to checkout' d='Shop.Theme.Actions'}</a>
