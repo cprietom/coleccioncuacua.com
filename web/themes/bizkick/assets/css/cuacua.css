@@ -20,7 +20,7 @@ body.tax-display-enabled .product-accessories .thumbnail-container {
 }
 
 .block-social ul > li {
-    background-color: #dddddd !important;
+    background-color: gray !important;
     border-radius: 50%!important;
     height: 2rem;
     width: 2rem;
@@ -143,13 +143,15 @@ a.cuacua-btn {
 
 /** Styles for the news page */
 .cuacua-news-title {
-    border-bottom: solid;
-    margin: 40px 0px 25px 0px;
+    margin: 10px 0px 10px 0px;
 }
 
 .cuacua-news-body {
-    border-bottom: solid;
     margin: 20px 0px 0px 0px;
+}
+
+.cuacua-news-new {
+    margin-bottom: 80px;
 }
 
 /** Styles for the downloads page */
@@ -191,4 +193,8 @@ a.cuacua-btn {
 
 .cuacua-italic {
     font-style: italic;
+}
+
+.cuacua-hide {
+    display: none;
 }
