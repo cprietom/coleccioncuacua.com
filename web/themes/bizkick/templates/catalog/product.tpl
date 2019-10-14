@@ -78,7 +78,10 @@
             <div class="col-md-6">
                 {block name='page_header_container'}
                     {block name='page_header'}
-                        <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+                        <table><tr>
+                            <td><h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1></td>
+                            <td style="width: 30%; text-align: right;"><img src="{$urls.img_url}bilingual_flag_{$language.iso_code}.png" width="100%" /></td>
+                        </tr></table>
                     {/block}
                 {/block}
                 {block name='product_prices'}
