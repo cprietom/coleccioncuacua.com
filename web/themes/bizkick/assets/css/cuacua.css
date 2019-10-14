@@ -155,6 +155,10 @@ a.cuacua-btn {
     margin-bottom: 80px;
 }
 
+.cuacua-news-new img {
+    width: 100%;
+}
+
 /** Styles for the downloads page */
 .cuacua-grid {
   display: grid;
