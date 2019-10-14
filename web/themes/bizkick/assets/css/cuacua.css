@@ -42,6 +42,7 @@ body.tax-display-enabled .product-accessories .thumbnail-container {
 }
 .youtube {
     background-size: contain !important;
+    background-image:url(../img/youtube.svg)
 }
 .instagram {
     background-size: contain !important;
