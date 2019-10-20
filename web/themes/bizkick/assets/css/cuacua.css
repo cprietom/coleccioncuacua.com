@@ -189,7 +189,6 @@ a.cuacua-btn {
 /** Styles for the videos section of the home page */
 .cuacua-videos-section {
     padding: 20px 0 20px 0;
-    background-color: #eeeeee !important;
 }
 
 .cuacua-bold {
@@ -202,4 +201,8 @@ a.cuacua-btn {
 
 .cuacua-hide {
     display: none;
+}
+
+.cuacua-center {
+    text-align: center;
 }

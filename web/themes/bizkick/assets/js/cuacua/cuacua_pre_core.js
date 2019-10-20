@@ -56,7 +56,7 @@ var downloads_section_link_to_all_text = [downloads_section_link_to_all_text_es,
 
 function buildDownloadItem(sectionId, linkToAllURI, value, index) {
     var _link = cuacua_url_base + cuacua_lang + linkToAllURI + "#" + sectionId + "-" + index;
-    var _img = cuacua_url_downloads + "/download" + index + ".png";
+    var _img = cuacua_url_downloads + "/download" + index + ".jpg";
     return "<div id='" + sectionId + "-" + index + "' class='product-item'>"
         + "<article class='product-miniature js-product-miniature' " +
         "itemscope='' itemtype='http://schema.org/Product'>"
@@ -81,7 +81,7 @@ function buildDownloadGrid(pageId, arrayItems, numberOfCols) {
 }
 
 function buildDownloadLink(index) {
-    var _img = cuacua_url_downloads + "/download" + index + ".png";
+    var _img = cuacua_url_downloads + "/download" + index + ".jpg";
     return "<a href='" + _img + "' target='_blank'>" +
         "<img id='" + downloads_section_id + "-" + index + "' src='" + _img + "' />" +
         "</a>";

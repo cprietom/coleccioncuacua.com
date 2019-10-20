@@ -34,8 +34,8 @@ var videos_section_link_to_all_text_en = "See all videos >";
 
 // PARA AÑADIR UNA NUEVA DESCARGA:
 //  1. Incluir en los arrays downloads_section_items_es/downloads_section_items_un nuevo elemento con el título de la nueva descarga en español e inglés
-var downloads_section_items_es = ["Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6", "Descarga7", "Descarga8"];
-var downloads_section_items_en = ["Download1", "Download2", "Download3", "Download4", "Download5", "Download6", "Download7", "Download8"];
+var downloads_section_items_es = ["Descarga0", "Descarga1", "Descarga2", "Descarga3"];
+var downloads_section_items_en = ["Descarga0", "Download1", "Download2", "Download3"];
 
 var downloads_section_title_es = "Descargas";
 var downloads_section_title_en = "Downloads";

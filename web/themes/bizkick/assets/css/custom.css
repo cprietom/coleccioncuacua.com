@@ -329,18 +329,18 @@ products
 }
 .featured-products .product-section-title h1,
 .product-section-title h1{
-    border-bottom: 2px solid #555;
     display: block;
-    font-size: 22px;
+    font-size: 30px;
     margin-top: 0;
-    padding-bottom: 10px;
+    padding: 20px 0 20px 0;
     text-transform: capitalize !important;
     letter-spacing: 0.5px;
     color: #222222;
     margin-bottom: 0;
-    text-align: left;
+    text-align: center;
     line-height: 24px;
     font-weight: 600;
+    background-color: #eeeeee
 }
 #products .product-title a, .featured-products .product-title a, 
 .product-accessories .product-title a, .product-miniature .product-title a {
@@ -526,7 +526,7 @@ li.product-flag.on-sale{
     top: -65px;
 }
 .product-slider .owl-controls.clickable .owl-buttons > div {
-    background: #333333;
+    background: #eeeeee;
     padding: 7px 12px;
     opacity: 1;
     font-size: 14px;
@@ -538,7 +538,8 @@ li.product-flag.on-sale{
     transition: all .3s ease 0s;
     -moz-transition: all .3s ease 0s;
     -webkit-transition: all .3s ease 0s;
-    color: #ffffff;
+    font-weight: bold;
+    color: black;
 }
 .product-slider .owl-controls.clickable .owl-buttons > div:hover {
     background: #F66D1F;
