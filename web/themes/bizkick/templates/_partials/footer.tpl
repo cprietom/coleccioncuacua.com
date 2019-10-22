@@ -23,7 +23,7 @@
 * International Registered Trademark & Property of PrestaShop SA
 *}
 
-<img src="http://coleccioncuacua.com/img/cms/cuacua-footer.jpg" width="100%" />
+<img src="https://coleccioncuacua.com/img/cms/cuacua-footer.jpg" width="100%" />
 
 <div class="newsletter-section">
     {block name='hook_footer_before'}
