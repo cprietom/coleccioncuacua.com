@@ -80,7 +80,11 @@
                     {block name='page_header'}
                         <table><tr>
                             <td><h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1></td>
-                            <td style="width: 30%; text-align: right;"><img src="{$urls.img_url}bilingual_flag_{$language.iso_code}.png" width="100%" /></td>
+                            <td style="width: 30%; text-align: right;">
+                                {if $product.id == 2 || $product.id == 3 || $product.id == 5}
+                                    <img src="{$urls.img_url}bilingual_flag_{$language.iso_code}.png" width="100%" />
+                                {/if}
+                            </td>
                         </tr></table>
                     {/block}
                 {/block}
