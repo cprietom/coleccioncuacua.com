@@ -34,8 +34,8 @@ var videos_section_link_to_all_text_en = "See all videos >";
 
 // PARA AÑADIR UNA NUEVA DESCARGA:
 //  1. Incluir en los arrays downloads_section_items_es/downloads_section_items_un nuevo elemento con el título de la nueva descarga en español e inglés
-var downloads_section_items_es = ["Descarga0", "Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6", "Descarga7", "Descarga8", "Descarga9", "Descarga10", "Descarga11"];
-var downloads_section_items_en = ["Descarga0", "Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6", "Descarga7", "Descarga8", "Descarga9", "Descarga10", "Descarga11"];
+var downloads_section_items_es = ["Descarga0", "Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6", "Descarga7", "Descarga8", "Descarga9", "Descarga10", "Descarga11", "Descarga12", "Descarga13", "Descarga14", "Descarga15", "Descarga16", "Descarga17", "Descarga17", "Descarga19"];
+var downloads_section_items_en = ["Descarga0", "Descarga1", "Descarga2", "Descarga3", "Descarga4", "Descarga5", "Descarga6", "Descarga7", "Descarga8", "Descarga9", "Descarga10", "Descarga11", "Descarga12", "Descarga13", "Descarga14", "Descarga15", "Descarga16", "Descarga17", "Descarga18", "Descarga19"];
 
 var downloads_section_title_es = "Descargas";
 var downloads_section_title_en = "Downloads";
