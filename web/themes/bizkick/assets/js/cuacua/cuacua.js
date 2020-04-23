@@ -16,13 +16,13 @@ var cuacua_videos_section_youtube_ids = ["ZndHigMZVjg", "sHh_4X2PoTA"];
 var cuacua_videos_section_items_es = ["El tigre Cuacuá (español)", "Cuacua Tiger (inglés)"];
 var cuacua_videos_section_items_en = ["El tigre Cuacuá (Spanish)", "Cuacua Tiger (English)"];
 
-var roar_videos_section_youtube_ids = ["IO8AxJz2EmY"];
-var roar_videos_section_items_es = ["Roar Squirrel (inglés)"];
-var roar_videos_section_items_en = ["Roar Squirrel (English)"];
+var roar_videos_section_youtube_ids = ["RdD78lwqkIU", "IO8AxJz2EmY"];
+var roar_videos_section_items_es = ["Roar Squirrel (español)", "Roar Squirrel (inglés)"];
+var roar_videos_section_items_en = ["Roar Squirrel (Spanish)", "Roar Squirrel (English)"];
 
-var wow_videos_section_youtube_ids = []; //["IO8AxJz2EmY"];
-var wow_videos_section_items_es = []; //["Wow Monkey (inglés)"];
-var wow_videos_section_items_en = []; //["Wow Monkey (English"];
+var wow_videos_section_youtube_ids = ["l5NJVtuxqSk"];
+var wow_videos_section_items_es = ["Wow Monkey (inglés)"];
+var wow_videos_section_items_en = ["Wow Monkey (English)"];
 
 var videos_section_title_es = "Últimos vídeos";
 var videos_section_title_en = "Latest videos";
