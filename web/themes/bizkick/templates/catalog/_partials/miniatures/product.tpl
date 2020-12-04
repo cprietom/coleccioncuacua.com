@@ -94,15 +94,21 @@
                             <input type="hidden" name="token" class="cart-form-token" value="{$static_token}">
                             <input type="hidden" value="{$product.id_product}" name="id_product">
                             <input type="hidden" class="input-group form-control" value="1" name="qty" />
-              				{if $product.quantity <= '0'}
-                                <button data-button-action="add-to-cart" class="btn btn-primary" title="{$product.availability_message}">{l s='Reservar ahora'}</button>
-                                <div style="clear: both; margin-top: 5px;">
-	                                <span id="product-availability">
-	                                  <i class="material-icons product-unavailable">&#xE14B;</i>{$product.availability_message}
-	                                </span>
+                            {if $product.quantity <= '0'}
+                                <button data-button-action="add-to-cart" class="btn btn-primary" title="{$product.availability_message}"
+                                {if $product.availability != 'available'}
+                                   disabled
+                               {/if}
+                                >
+                                    {l s='Reservar ahora'}
+                                </button>
+                                <div style="    clear: both; margin-top: 5px;">
+                                    <span id="product-availa    bility">
+                                      <i class="material-icons product-unavailable">&#xE14B;</i>{$product.availability_message}
+                                    </span>
                                 </div>
                             {else}
-                            	<button data-button-action="add-to-cart" class="btn btn-primary">{l s='Add to cart' d='Shop.Theme.Actions'}</button>
+                                <button data-button-action="add-to-cart" class="btn btn-primary">{l s='Add to cart' d='Shop.Theme.Actions'}</button>
                             {/if}
                         </form>
                     </div>
