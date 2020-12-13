@@ -1,0 +1,213 @@
+#header .header-nav {
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,.2);
+}
+
+body#checkout #header .header-nav {
+    padding: 0 0 0 0 !important;
+}
+
+/** Fix unbalanced button in 'you alrso may like' section */
+body.tax-display-enabled .product-accessories .product-description {
+    height: auto !important;
+}
+
+body.tax-display-enabled .product-accessories .thumbnail-container {
+	height: 468px;
+}
+
+.block-social {
+    padding-top: 10px !important;
+}
+
+.block-social ul > li {
+    background-color: gray !important;
+    border-radius: 50%!important;
+    height: 2rem;
+    width: 2rem;
+}
+
+.block-social ul > li:hover {
+    background-color: #F66D1F!important;
+}
+
+@media(max-width: 479px) {
+    .block-social ul > li {
+        height: 1.5rem !important;
+        width: 1.5rem !important;
+    }
+}
+
+.facebook {
+    background-size: contain !important;
+}
+.youtube {
+    background-size: contain !important;
+    background-image:url(../img/youtube.svg)
+}
+.instagram {
+    background-size: contain !important;
+}
+
+/******************/
+/** Cuacua styles */
+/******************/
+
+.cuacua-paragraph {
+    margin: 0 0 10px 0;
+}
+
+.cuacua-font-size-lg {
+    font-size: 22px;
+}
+
+.cuacua-font-size-md {
+    font-size: 18px;
+}
+
+@media(max-width: 767px) {
+    .cuacua-font-size-lg {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 639px) {
+    .cuacua-font-size-lg, .cuacua-font-size-md {
+        font-size: 16px;
+    }
+}
+
+.cuacua-font-size-big {
+    font-size: 22px;
+}
+
+.cuacua-section {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    float: left;
+    width: 100%;
+}
+
+.cuacua-text-color {
+	color: #F66D1F;
+}
+
+a.cuacua-btn {
+ 	color:#FFFFFF;
+  	background-color:#F66D1F;
+ 	border-radius:5px;
+}
+
+.cuacua-row {
+    box-sizing: border-box;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.cuacua-column {
+    box-sizing: border-box;
+    -ms-flex: 33%; /* IE10 */
+    flex: 33%;
+    max-width: 33%;
+    padding: 0 4px;
+}
+
+.cuacua-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .cuacua-column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+    .cuacua-column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.all-product-link {
+	color: #1eae98!important;
+}
+
+/** Styles for the news page */
+.cuacua-news-title {
+    margin: 10px 0px 10px 0px;
+}
+
+.cuacua-news-body {
+    margin: 20px 0px 0px 0px;
+}
+
+.cuacua-news-new {
+    margin-bottom: 80px;
+}
+
+.cuacua-news-new img {
+    width: 100%;
+}
+
+/** Styles for the downloads page */
+.cuacua-downloads-grid {
+    display: grid;
+}
+.cuacua-downlaods-block {
+    display: block;
+}
+.cuacua-downloads-page {
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+  }
+.cuacua-downloads-page img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  max-width: 100%;
+}
+
+/** Legal pages*/
+.cuacua-legal-page {
+    padding: 10px 0 10px 0;
+}
+
+.cuacua-legal-page p {
+    padding: 10px 0 0 0;
+}
+
+.cuacua-legal-page ul {
+    list-style-type: circle;
+    padding-left: 30px;
+}
+
+/** Styles for the videos section of the home page */
+.cuacua-videos-section {
+    padding: 20px 0 20px 0;
+}
+
+.cuacua-bold {
+    font-weight: bold;
+}
+
+.cuacua-italic {
+    font-style: italic;
+}
+
+.cuacua-hide {
+    display: none;
+}
+
+.cuacua-center {
+    text-align: center;
+}
