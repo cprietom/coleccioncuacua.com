@@ -25,7 +25,7 @@
 <div id="_desktop_contact_link">
   <div id="contact-link">
     {if $contact_infos.phone}
-    <img src="../img/whatsapp_16.svg"/>
+    <img src="../../img/whatsapp_16.svg"/>
       {* [1][/1] is for a HTML tag. *}
       {l
         s='Call us: [1]%phone%[/1]'
